@@ -1,0 +1,19 @@
+#new-button{
+    background-color: green;
+font-size: 20px;
+border-radius:9px;
+color: white;
+display: block;
+margin:0 auto;
+padding: 20px;
+cursor: pointer;
+
+}
+#NewBookForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+
+}

@@ -3,12 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Library</title>
 </head>
 <body>
 <div class="container">
+<button id="new-button">Add Book</button>
+<form id="NewBookForm" style="display:none;">
+    <label for="text">Title: </label>
+<input type="text" id="text" placeholder="Title:">
+<label for="text">Author: </label>
+<input type="text" id="text" placeholder="Author:">
+<label for="text">Pages: </label>
+<input type="text" id="text" placeholder= "Pages:">
+<input type="checkbox"  placeholder="Read:">Read: </label>
+<button type="submit">Submit</button>
+</form>
 
 </div>
+<div id="library"></div>
+<script src="index.js"></script>
 
 </body>
 </html>
