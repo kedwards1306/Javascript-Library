@@ -1,19 +1,124 @@
-#new-button{
-    background-color: green;
-font-size: 20px;
-border-radius:9px;
-color: white;
-display: block;
-margin:0 auto;
-padding: 20px;
-cursor: pointer;
-
+/* Basic reset for margins, padding, and box-sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
-#NewBookForm {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  flex-direction: column;
 
+/* Styling for the container */
+.container {
+  text-align: center;
+  margin: 20px;
+}
+
+/* Styling for the "Add Book" button */
+#new-button {
+  background-color: #4CAF50;
+  font-size: 20px;
+  border-radius: 9px;
+  color: white;
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+#new-button:hover {
+  background-color: #45a049;
+}
+
+/* Styling for the form */
+#NewBookForm {
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+#NewBookForm label {
+  margin: 10px 0 5px;
+}
+
+#NewBookForm input[type="text"],
+#NewBookForm input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#NewBookForm input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+#NewBookForm button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#NewBookForm button:hover {
+  background-color: #45a049;
+}
+
+/* Styling for the library display */
+#library {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#library div {
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 10px;
+  width: 250px;
+  text-align: left;
+  position: relative;
+}
+
+#library div p {
+  margin-bottom: 10px;
+}
+
+#library div button {
+  background-color: #ff5c5c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  transition: background-color 0.3s ease;
+}
+
+#library div button:hover {
+  background-color: #ff4a4a;
+}
+
+#library div button:nth-child(2) {
+  right: 80px;
+  background-color: #4CAF50;
+}
+
+#library div button:nth-child(2):hover {
+  background-color: #45a049;
 }

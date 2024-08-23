@@ -10,14 +10,15 @@
 <div class="container">
 <button id="new-button">Add Book</button>
 <form id="NewBookForm" style="display:none;">
-    <label for="text">Title: </label>
-<input type="text" id="text" placeholder="Title:">
-<label for="text">Author: </label>
-<input type="text" id="text" placeholder="Author:">
-<label for="text">Pages: </label>
-<input type="text" id="text" placeholder= "Pages:">
-<input type="checkbox"  placeholder="Read:">Read: </label>
-<button type="submit">Submit</button>
+    <label for="title">Title: </label>
+    <input type="text" id="title" placeholder="Title" required>
+    <label for="author">Author: </label>
+    <input type="text" id="author" placeholder="Author" required>
+    <label for="pages">Pages: </label>
+    <input type="number" id="pages" placeholder="Pages" required>
+    <label for="read">Read: </label>
+    <input type="checkbox" id="read">
+    <button type="submit">Submit</button>
 </form>
 
 </div>
